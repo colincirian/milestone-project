@@ -1,0 +1,22 @@
+.blue-circle {
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.red-circle {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+#yellow-circle {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+}
