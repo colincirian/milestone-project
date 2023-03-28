@@ -17,11 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
       el.classList.add("hide-me");
       el.classList.remove("show-me");
     })
-    document.querySelector('#time-screen').classList.add("show-me");
+    document.querySelector('#difficulty-screen').classList.add("show-me");
   }) 
 }, false);
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementByClass('#button-list').addEventListener('click', function() {
+  document.getElementByClass('.time-button').addEventListener('click', function() {
     document.querySelectorAll('.app-screen').forEach(function(el)
-  {
+  { 
+      el.classList.add("hide-me");
+      el.classList.remove("show-me");
+    })
+      document.querySelector('#time-screen').classList.add("show-me");
+  }) 
+}, false); 

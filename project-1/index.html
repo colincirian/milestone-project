@@ -14,29 +14,42 @@
     <main id="main">
         <div id="start-screen" class="app-screen show-me">
             <h1 class="all-h1">aim trainer</h1>
-            <button class="raise" id="start-button">Start Game</button>
+            <button class="buttons" id="start-button">Start Game</button>
         </div>
 
 
-        <div id="time-screen" class="app-screen hide-me">
-            <h1 class="all-h1">choose time</h1>
-            <ul id="list-time">
-                <li class="btn-list">
-                    <button class="time-btn" data-time="15">15s</button>
-                    <button class="time-btn" data-time="30">30s</button>
-                    <button class="time-btn" data-time="1min">1min</button>
-                    <button class="time-btn" data-unlimited="true">unlimited</button>
+        <div id="difficulty-screen" class="app-screen hide-me">
+            <h1 class="all-h1">choose difficulty</h1>
+            <ul id="list-time" class="btn-list">
+                <li>
+                    <button class="buttons" data-difficulty="0">easy</button>
+                </li>
+                <li>
+                    <button class="buttons" data-difficulty="1">intermediate</button>
+                </li>
+                <li>
+                    <button class="buttons" data-difficulty="2">hard</button>
                 </li>
             </ul>
         </div>
 
 
-        <div id="game-screen" class="app-screen">
+        <div id="easy-screen" class="app-screen hide">
             <div id="target-area">
                 <h1></h1>
 
 
             </div>
+
+        </div>
+
+
+        <div id="intermediate-screen" class="app-screen">
+
+        </div>
+        
+
+        <div id="hard-screen">
 
         </div>
         

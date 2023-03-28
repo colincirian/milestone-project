@@ -1,9 +1,9 @@
 .all-h1 {
     font-family: "Times New Roman", Times, serif;
     color: white;
-    font-size: 4rem;
+    font-size: 5rem;
     align-items: center;
-    justify-content: space-between;
+    margin: 0.5rem;
 }
 
 body {
@@ -24,38 +24,35 @@ body {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-
 }
 
 button {
     color: white;
     background-color: transparent;
-    border: 2px solid;
-    font-size: 5rem;
+    border: 3px solid;
     margin: 2rem;
-    padding: 0.8em 6em;
+    padding: 0.8em 5em;
     display: flex;
     transition-duration: 0.2s;
   } 
 
-
-  .raise:hover, .raise:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.8em);
-    color: red;
+  .buttons {
+    padding: 0.3em 3.5em;
+    font-size: 30px;
   }
 
-  .time-btn:hover, .time-btn:focus {
+  .buttons:hover, .buttons:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.5em);
-    color: red;
+    color: midnightblue;
   }
 
   .btn-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     list-style: none;
+    justify-content: center;
   }
 
  #target-area {
