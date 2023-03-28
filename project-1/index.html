@@ -7,26 +7,38 @@
     <script src="/index.js"></script>
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <title>Accuracy Training</title>
+    <title>aim trainer</title>
 
 </head>
 <body id="body">
     <main id="main">
-        <div class="screen1">
-            <h1 id="h1">aim trainer</h1>
-            <button class="raise" id="start">Start Game</button>
+        <div id="start-screen" class="app-screen show-me">
+            <h1 class="all-h1">aim trainer</h1>
+            <button class="raise" id="start-button">Start Game</button>
+        </div>
+
+
+        <div id="time-screen" class="app-screen hide-me">
+            <h1 class="all-h1">choose time</h1>
+            <ul id="list-time">
+                <li class="btn-list">
+                    <button class="time-btn" data-time="15">15s</button>
+                    <button class="time-btn" data-time="30">30s</button>
+                    <button class="time-btn" data-time="1min">1min</button>
+                    <button class="time-btn" data-unlimited="true">unlimited</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="game-screen" class="app-screen">
+            <div id="target-area">
+                <h1></h1>
+
+
             </div>
-            <div class="screen2">
-                <h1 id="time-h1">time</h1>
-                <ul id="list-time" id="time-list">
-                    <li class="list">
-                        <button class="time-btn" data-time="15">15s</button>
-                        <button class="time-btn" data-time="30">30s</button>
-                        <button class="time-btn" data-time="1min">1min</button>
-                        <button class="time-btn" data-unlimited="true">unlimited</button>
-                    </li>
-                </ul>
-            </div>
+
+        </div>
         
     </main>
 </body>
