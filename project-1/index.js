@@ -1,4 +1,53 @@
+function scrollToTarget() {
+  const element = document.getElementById("difficulty-screen");
+  element.scrollIntoView({ behavior: "instant"});
+}
+
+let condition = true;
+if(condition) {
+  document.getElementById("button1").click();
+} else if(condition2) {
+  document.getElementById("button2").click(); 
+} else() => {
+  document.getElementById("button3").click();
+}
+
+
+
+
+
+
+// start the game
+function startGame(){
+  playing = true;
+  interval = setInterval(decreaseTime, 1000);
+  createTarget();
+}
+
+function decreaseTime() {
+  if(time === 0) {
+    console.log("Game Over")
+  }
+}
+
 function createTarget() {
+  if(!playing) {
+    return;
+  }
+  const target = document.createElement("div");
+  const size = getRandomNumber(30, 100);
+}
+
+
+
+
+
+
+
+
+
+
+/*function createTarget() {
   
 // determine random coordinates 
 // create target element 
@@ -19,13 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     document.querySelector('#difficulty-screen').classList.add("show-me");
   }) 
-}, false);
+}, false); */
 
 
-/*const startBtn = document.querySelector("#start-screen"),
-  screens = document.querySelector(".app-screen"),
-  difficultyList = document.querySelector("#difficulty-screen");
-
-startBtn.addEventListener("click", ()=> {
-  screens[0].classList.add("difficulty-screen");
-})*/
