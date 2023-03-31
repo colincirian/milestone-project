@@ -3,6 +3,72 @@ function scrollToTarget() {
   element.scrollIntoView({ behavior: "instant"});
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#start-screen').addEventListener('click', function() {
+    document.querySelectorAll('.app-screen').forEach(function(el)
+  {
+      el.classList.add("hide-me");
+      el.classList.remove("show-me");
+    })
+    document.querySelector('#difficulty-screen').classList.add("show-me");
+  }) 
+}, false);
+
+
+
+
+
+
+
+
+
+
+
+// get element
+let screen = document.getElementById("easy-screen");
+// set height and width 
+let maxX = window.innerWidth - easy-screen.offsetWidth;
+let maxY = window.innerHeight - easy-screen.offsetHeight;
+// function that generates random # 
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function moveTarget() {
+let randomX = getRandom(0, maxX);
+let randomY = getRandom(0, maxY);
+
+target1.style.left = randomX + "px";
+target1.style.top = randomY + "px";
+}
+
+// set the interval for the target to move every 3 seconds
+setInterval(moveTarget, 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let condition = true;
 if(condition) {
   document.getElementById("button1").click();
@@ -57,17 +123,6 @@ function createTarget() {
 setTimeout(createTarget, 2000) 
 }
 
-createTarget()
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#start-screen').addEventListener('click', function() {
-    document.querySelectorAll('.app-screen').forEach(function(el)
-  {
-      el.classList.add("hide-me");
-      el.classList.remove("show-me");
-    })
-    document.querySelector('#difficulty-screen').classList.add("show-me");
-  }) 
-}, false); */
+createTarget() */
 
 
