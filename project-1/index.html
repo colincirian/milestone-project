@@ -12,57 +12,66 @@
 </head>
 <body id="body">
     <main id="main">
-        <!--start screen section-->
-        <section class="app-screen">
-            <div id="start-screen">
+
+        <header>
+            <section id="section1" class="screen show-me">
                 <h1 class="all-h1">aim trainer</h1>
-                    <button class="start-button" onclick="scrollToTarget()">Start Game</button>
-            </div>
-        </section>
+                <button id="start-button" scrollToTarget() data-target="difficulty-screen">Start Game</button>
+            </section>
+        </header>
 
+        <body>
+            <section id="section2" class="screen hide-me">
+                <div id="difficulty-screen">
+                    <h1 class="all-h1">choose difficulty</h1>
+                        <ul id="difficulty-list" class="btn-list">
+                            <li><button id="easyBtn" class="difficulty-buttons" data-difficulty="0">easy</button></li>
+                            <li><button id="intermediateBtn" class="difficulty-buttons" data-difficulty="1">intermediate</button></li>
+                            <li><button id="hardBtn" class="difficulty-buttons" data-difficulty="2">hard</button></li>
+                        </ul>
+                </div>
+            </section>
+        </body>
+        <!--easy screen section-->
+            <section id="section3" class="screen">
+                <div id="easy-h1">
+                    <h1>easy</h1>
+                </div>
+                    <button class="homeBtn">home</button>
+                        <div id="easy-mode">
+                            <div id="target1">
+                                <div class="target">box 1</div>
+                                <div class="target">box 1</div>
+                                <div class="target">box 1</div>
+                                <div class="target">box 1</div>
+                                <div class="target">box 1</div>
+                            </div>
+                        </div>
+            </section>
 
-        <section class="app-screen">
-            <div id="difficulty-screen">
-                <h1 class="all-h1">choose difficulty</h1>
-                    <ul id="difficulty-list" class="btn-list">
-                        <li><button id="button1" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="0">easy</button></li>
-                        <li><button id="button2" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="1">intermediate</button></li>
-                        <li><button id="button3" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="2">hard</button></li>
-                    </ul>
-            </div>
-        </section>
-
-
-        <section id="easy-screen">
-            <h1 class="mode-h1">easy</h1>
-                <div id="easy-mode">
-                    <div>
-                        <div id="target1">
+            <!--
+            <section id="section4" class="screen">
+                <h1 class="mode-h1">intermediate</h1>
+                <button class="homeBtn">home</button>
+                    <div id="intermediate-mode">
+                        <div id="game-1">
 
                         </div>
                     </div>
-                </div>
-        </section>
+            </section>
 
-        
-        <section id="intermediate-screen">
-            <h1 class="mode-h1">intermediate</h1>
-                <div id="intermediate-mode">
-                    <div id="game-1">
 
+            <section id="section5" class="screen">
+                <h1 class="mode-h1">hard</h1>
+                <button class="homeBtn">home</button>
+                    <div id="hard-mode">
+                        <div id="game-1">
+
+                        </div>
                     </div>
-                </div>
-        </section>
+            </section> -->
 
-
-        <section id="hard-screen">
-            <h1 class="mode-h1">hard</h1>
-                <div id="hard-mode">
-                    <div id="game-1">
-
-                    </div>
-                </div>
-        </section>
+        </body>
         
     </main>
 </body>

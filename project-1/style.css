@@ -8,30 +8,34 @@
     letter-spacing: 8px;
 }
 
-.mode-h1 {
+#easy-h1 {
+  color: white;
+  font-size: 40px;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-.app-screen {
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+.screen {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
-#start-screen {
+#section1 {
   justify-content: center;
   align-items: center;
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+}
+
+#section2 {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #difficulty-screen {
@@ -40,78 +44,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-}
-
-#easy-screen {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  background-color: darkgray;
-}
-
-#intermediate-screen {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-}
-
-#hard-screen {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  background-color: blue;
-  border-radius: 1.5rem;
-}
-
-button {
-  color: white;
-  background-color: transparent;
-  border: 2px solid;
-  display: flex;
-} 
-
-.start-button {
-  font-size: 15px;
-  padding: 0.3em 1em;
-  letter-spacing: 5px;
-}
-
-  .difficulty-buttons {
-    padding: 0.3em 2em;
-    font-size: 25px;
-  }
-
-  li {
-    padding: 0.5rem;
-  }
-
-  button:hover, button:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.5em);
-    color: midnightblue;
-    transition-duration: 0.5s;
-  }
-
-  .btn-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    justify-content: center;
-  }
-
-html {
-  scroll-behavior: smooth;
+  margin-top: 22.5rem;
 }
 
 #easy-mode {
@@ -144,3 +77,59 @@ html {
   align-items: center;
 }
 
+
+button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid;
+  display: flex;
+  display: block;
+} 
+
+#start-button {
+  font-size: 20px;
+  padding: 0.3em 1em;
+  letter-spacing: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.difficulty-buttons {
+  padding: 0.3em 2em;
+  font-size: 25px;
+}
+
+li {
+  padding: 0.5rem;
+}
+
+button:hover, button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.5em);
+  color: midnightblue;
+  transition-duration: 0.6s;
+}
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.target {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  border-radius: 10rem;
+}
+
+.homeBtn {
+  margin: 0rem 0rem 2rem 102rem;
+  width: 120px;
+  position: absolute;
+}

@@ -1,148 +1,56 @@
- function scrollToTarget() {
-  const element = document.getElementById("difficulty-screen");
-  element.scrollIntoView({ behavior: "smooth"});
-}
+// function to each section
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("section2").scrollIntoView({ behavior: 'smooth' });
+  });
+})
 
-function scrollToTarget() {
-  const easy = document.getElementById("");
-  easy.scrollIntoView({ behavior: "smooth"});
-}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("easyBtn").addEventListener("click", function() {
+    document.getElementById("section3").scrollIntoView({ behavior: 'smooth' });
+  });
+})
 
-function scrollToTarget() {
-  const intermediate = document.getElementById("intermediate-screen");
-  intermediate.scrollIntoView({ behavior: "smooth"});
-}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("intermediateBtn").addEventListener("click", function() {
+    document.getElementById("section4").scrollIntoView({ behavior: 'smooth' });
+  });
+})
 
-function scrollToTarget() {
-  const element = document.getElementById("hard-screen");
-  element.scrollIntoView({ behavior: "smooth"});
-}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("hardBtn").addEventListener("click", function() {
+    document.getElementById("section5").scrollIntoView({ behavior: 'smooth' });
+  });
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-function showEasy() {
-  document.getElementById("difficulty-screen").style.display = "none";
-  document.getElementById("easy-screen").style.display = "block";
-  document.getElementById("intermediate-screen").style.display = "none";
-  document.getElementById("hard-screen").style.display = "none";
-}
-
-function showIntermediate() {
-  document.getElementById("difficulty-screen").style.display = "none";
-  document.getElementById("easy-screen").style.display = "none";
-  document.getElementById("intermediate-screen").style.display = "block";
-  document.getElementById("hard-screen").style.display = "none";
-}
-
-function showHard() {
-  document.getElementById("difficulty-screen").style.display = "none";
-  document.getElementById("easy-screen").style.display = "none";
-  document.getElementById("intermediate-screen").style.display = "none";
-  document.getElementById("hard-screen").style.display = "block";
-}
-
-document.querySelector("#button1").addEventListener("click", showEasy);
-document.querySelector("#button2").addEventListener("click", showIntermediate);
-document.querySelector("#button3").addEventListener("click", showHard);
-
-
-
-
-
-/*
-// get element
-let screen = document.getElementById("");
-// set height and width 
-let maxX = window.innerWidth - easy-screen.offsetWidth;
-let maxY = window.innerHeight - easy-screen.offsetHeight;
-// function that generates random # 
-function getRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function moveTarget() {
-let randomX = getRandom(0, maxX);
-let randomY = getRandom(0, maxY);
-
-target1.style.left = randomX + "px";
-target1.style.top = randomY + "px";
-}
-
-// set the interval for the target to move every 3 seconds
-setInterval(moveTarget, 3000);
-
-
-
-
-
-
-
-// start the game
-function startGame(){
-  playing = true;
-  interval = setInterval(decreaseTime, 1000);
-  createTarget();
-}
-
-function decreaseTime() {
-  if(time === 0) {
-    console.log("Game Over")
-  }
-}
-
-function createTarget() {
-  if(!playing) {
-    return;
-  }
-  const target = document.createElement("div");
-  const size = getRandomNumber(30, 100);
-}
-
-
-
-
-
-
-
-
-
-
-/*function createTarget() {
+document.addEventListener('DOMContentLoaded', function() {
+  const homeBtn = document.querySelectorAll(".homeBtn");
   
-// determine random coordinates 
-// create target element 
-// place target element at coordinates 
-// add event listener to new target 
-// add set timeout to call this function again in ()s 
-setTimeout(createTarget, 2000) 
-}
-
-createTarget() */
-
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+  homeBtn.forEach(btn => {
+    btn.addEventListener("click", function() {
+      document.getElementById("section1").scrollIntoView({ behavior: 'smooth' });
     });
   });
 });
+
+// Define the square area where the element will spawn
+const spawnArea = {
+  x: 0, // left boundary
+  y: 0, // top boundary
+  width: 650, // horizontal size
+  height: 650, // vertical size
+};
+
+// Set up the random number generator
+const random = (min, max) => Math.random() * (max - min) + min;
+
+// Generate random coordinates within the spawn area
+const spawnX = random(spawnArea.x, spawnArea.x + spawnArea.width);
+const spawnY = random(spawnArea.y, spawnArea.y + spawnArea.height);
+
+// Create the element at the random coordinates
+const element = document.createElement("div");
+element.style.position = "absolute";
+element.style.left = spawnX + "px";
+element.style.top = spawnY + "px";
+document.body.appendChild(element);
