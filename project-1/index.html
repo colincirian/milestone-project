@@ -12,6 +12,7 @@
 </head>
 <body id="body">
     <main id="main">
+        <!--start screen section-->
         <section class="app-screen">
             <div id="start-screen">
                 <h1 class="all-h1">aim trainer</h1>
@@ -24,47 +25,43 @@
             <div id="difficulty-screen">
                 <h1 class="all-h1">choose difficulty</h1>
                     <ul id="difficulty-list" class="btn-list">
-                        <li>
-                            <button id="button1" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="0">easy</button>
-                        </li>
-                        <li>
-                            <button id="button2" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="1">intermediate</button>
-                        </li>
-                        <li>
-                            <button id="button3" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="2">hard</button>
-                        </li>
+                        <li><button id="button1" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="0">easy</button></li>
+                        <li><button id="button2" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="1">intermediate</button></li>
+                        <li><button id="button3" class="difficulty-buttons" onclick="scrollToTarget()" data-difficulty="2">hard</button></li>
                     </ul>
             </div>
         </section>
 
 
-        <section class="app-screen">
-            <div id="easy-screen">
-                <h1 class="all-h1">easy</h1>
-                    <div id="target1">
+        <section id="easy-screen">
+            <h1 class="mode-h1">easy</h1>
+                <div id="easy-mode">
+                    <div>
+                        <div id="target1">
 
+                        </div>
                     </div>
-            </div>
+                </div>
         </section>
 
         
-        <section class="app-screen">
-            <div id="intermediate-screen">
-                <h1 class="all-h1">intermediate</h1>
+        <section id="intermediate-screen">
+            <h1 class="mode-h1">intermediate</h1>
+                <div id="intermediate-mode">
                     <div id="game-1">
 
                     </div>
-            </div>
+                </div>
         </section>
 
 
-        <section class="app-screen">
-            <div id="hard-screen">
-                <h1 class="all-h1">hard</h1>
+        <section id="hard-screen">
+            <h1 class="mode-h1">hard</h1>
+                <div id="hard-mode">
                     <div id="game-1">
 
                     </div>
-            </div>
+                </div>
         </section>
         
     </main>

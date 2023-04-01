@@ -1,18 +1,22 @@
-function scrollToTarget() {
+ function scrollToTarget() {
   const element = document.getElementById("difficulty-screen");
-  element.scrollIntoView({ behavior: "instant"});
+  element.scrollIntoView({ behavior: "smooth"});
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#start-screen').addEventListener('click', function() {
-    document.querySelectorAll('.app-screen').forEach(function(el)
-  {
-      el.classList.add("hide-me");
-      el.classList.remove("show-me");
-    })
-    document.querySelector('#difficulty-screen').classList.add("show-me");
-  }) 
-}, false);
+function scrollToTarget() {
+  const easy = document.getElementById("");
+  easy.scrollIntoView({ behavior: "smooth"});
+}
+
+function scrollToTarget() {
+  const intermediate = document.getElementById("intermediate-screen");
+  intermediate.scrollIntoView({ behavior: "smooth"});
+}
+
+function scrollToTarget() {
+  const element = document.getElementById("hard-screen");
+  element.scrollIntoView({ behavior: "smooth"});
+}
 
 
 
@@ -24,8 +28,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
+
+
+
+
+/*
+
+function showEasy() {
+  document.getElementById("difficulty-screen").style.display = "none";
+  document.getElementById("easy-screen").style.display = "block";
+  document.getElementById("intermediate-screen").style.display = "none";
+  document.getElementById("hard-screen").style.display = "none";
+}
+
+function showIntermediate() {
+  document.getElementById("difficulty-screen").style.display = "none";
+  document.getElementById("easy-screen").style.display = "none";
+  document.getElementById("intermediate-screen").style.display = "block";
+  document.getElementById("hard-screen").style.display = "none";
+}
+
+function showHard() {
+  document.getElementById("difficulty-screen").style.display = "none";
+  document.getElementById("easy-screen").style.display = "none";
+  document.getElementById("intermediate-screen").style.display = "none";
+  document.getElementById("hard-screen").style.display = "block";
+}
+
+document.querySelector("#button1").addEventListener("click", showEasy);
+document.querySelector("#button2").addEventListener("click", showIntermediate);
+document.querySelector("#button3").addEventListener("click", showHard);
+
+
+
+
+
+/*
 // get element
-let screen = document.getElementById("easy-screen");
+let screen = document.getElementById("");
 // set height and width 
 let maxX = window.innerWidth - easy-screen.offsetWidth;
 let maxY = window.innerHeight - easy-screen.offsetHeight;
@@ -45,38 +88,6 @@ target1.style.top = randomY + "px";
 // set the interval for the target to move every 3 seconds
 setInterval(moveTarget, 3000);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let condition = true;
-if(condition) {
-  document.getElementById("button1").click();
-} else if(condition2) {
-  document.getElementById("button2").click(); 
-} else() => {
-  document.getElementById("button3").click();
-}
 
 
 
@@ -126,3 +137,12 @@ setTimeout(createTarget, 2000)
 createTarget() */
 
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
