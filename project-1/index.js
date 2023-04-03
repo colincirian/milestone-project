@@ -33,6 +33,50 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+// function that makes the element disappear when clicked
+document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
+  const container = document.getElementById("easy-container");
+  const target = document.getElementById("target");
+
+  target.style.width = "50px";
+  target.style.height = "50px";
+  target.style.backgroundColor = "red";
+  target.style.position = "absolute";
+
+  container.appendChild(target);
+
+  // function that spawns target randomly
+  function spawnTarget() {
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+    const targetWidth = target.offsetWidth;
+    const targetHeight = target.offsetHeight;
+
+    target.style.left = Math.floor(Math.random() * (containerWidth - targetWidth)) + "px";
+    target.style.top = Math.floor(Math.random() * (containerHeight - targetHeight)) + "px";
+  }
+
+  spawnTarget();
+
+  target.addEventListener("click", () => {
+    target.remove();
+    spawnTarget();
+   });
+  };
+})
+
+
+
+
+
+
+
+
+
+
+/*
 // Define the square area where the element will spawn
 const spawnArea = {
   x: 0, // left boundary
@@ -53,4 +97,4 @@ const element = document.createElement("div");
 element.style.position = "absolute";
 element.style.left = spawnX + "px";
 element.style.top = spawnY + "px";
-document.body.appendChild(element);
+document.body.appendChild(element); */
