@@ -10,70 +10,69 @@
     <title>aim trainer</title>
 
 </head>
+
+
+<section id="section1" class="screen">
+    <h1 class="all-h1">aim trainer</h1>
+    <button id="start-button" data-target="difficulty-screen">Start Game</button>
+</section>
+
+
+<section id="section2" class="screen">
+    <div id="difficulty-screen">
+        <h1 class="all-h1">choose difficulty</h1>
+            <ul id="difficulty-list" class="btn-list">
+                <li><button id="easyBtn" class="difficulty-buttons" data-difficulty="0">easy</button></li>
+                <li><button id="intermediateBtn" class="difficulty-buttons" data-difficulty="1">intermediate</button></li>
+                <li><button id="hardBtn" class="difficulty-buttons" data-difficulty="2">hard</button></li>
+            </ul>
+    </div>
+</section>
+
+
 <body id="body">
-    <main id="main">
+    <!--easy screen-->
+    <section id="section3" class="screen">
+        <div class="div-container">
+            <h1 class="difficulty-h1">easy</h1>
+            <div class="time-score">
+                <div class="time">time: 60</div>
+                <div id="score">score: 0</div>
+            </div>
+                <button class="homeBtn">home</button>
+                <div id="easy-container">
+                     <div id="target"></div>
+                 </div>
+            </div>
+    </section>
 
-        <header>
-            <section id="section1" class="screen">
-                <h1 class="all-h1">aim trainer</h1>
-                <button id="start-button" scrollToTarget() data-target="difficulty-screen">Start Game</button>
-            </section>
-        </header>
 
-        <body>
-            <section id="section2" class="screen">
-                <div id="difficulty-screen">
-                    <h1 class="all-h1">choose difficulty</h1>
-                        <ul id="difficulty-list" class="btn-list">
-                            <li><button id="easyBtn" class="difficulty-buttons" data-difficulty="0">easy</button></li>
-                            <li><button id="intermediateBtn" class="difficulty-buttons" data-difficulty="1">intermediate</button></li>
-                            <li><button id="hardBtn" class="difficulty-buttons" data-difficulty="2">hard</button></li>
-                        </ul>
-                </div>
-            </section>
-        </body>
-        <!--easy screen section-->
-            <section id="section3">
-                <div class="div-container">
-                    <h1 class="mode-h1">easy</h1>
-                    <button class="homeBtn">home</button>
-                        <div id="easy-container">
-                          <div id="target">
-                            target
-                            <div>
-                        </div>
+    <!--intermediate screen-->
+    <section id="section4" class="screen">
+        <div class="div-container">
+            <h1 class="difficulty-h1">intermediate</h1>
+            <button class="homeBtn">home</button>
+                <div id="intermediate-container">
+                    <div id="game-1">
+
                     </div>
                 </div>
-            </section>
+            </div>
+    </section>
 
-            
-            <section id="section4">
-                <div class="div-container">
-                    <h1 class="mode-h1">intermediate</h1>
-                    <button class="homeBtn">home</button>
-                        <div id="intermediate-container">
-                            <div id="game-1">
 
-                            </div>
+    <!--hard screen-->
+    <section id="section5" class="screen">
+        <div class="div-container">
+            <h1 class="difficulty-h1">hard</h1>
+                <button class="homeBtn">home</button>
+                    <div id="hard-container">
+                        <div id="game-1">
+
                         </div>
-                 </div>
-            </section>
-
-
-            <section id="section5">
-                <div class="div-container">
-                    <h1 class="mode-h1">hard</h1>
-                     <button class="homeBtn">home</button>
-                         <div id="hard-container">
-                             <div id="game-1">
-
-                             </div>
-                         </div>
-                </div>
-            </section> 
-
-        </body>
-        
-    </main>
+                    </div>
+        </div>
+    </section> 
+    
 </body>
 </html>
