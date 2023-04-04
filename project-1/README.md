@@ -1,1 +1,1 @@
-Aim trainer is a 
+Aim trainer is a free game anyone can access to get some practice for the most popular FPS games. The game is designed to randomly pop up a target within a certain parameter on the screen the player is supposed to "shoot". 

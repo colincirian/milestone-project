@@ -1,14 +1,4 @@
 .all-h1 {
-    font-family: "Times New Roman", Times, serif;
-    color: white;
-    font-size: 3.5rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-    letter-spacing: 8px;
-}
-
-.difficulty-h1 {
   font-family: "Times New Roman", Times, serif;
   color: white;
   font-size: 3.5rem;
@@ -18,10 +8,20 @@
   letter-spacing: 8px;
 }
 
-.screen {
+.difficulty-h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 3.5rem;
+  margin: 0.5rem;
+  letter-spacing: 8px;
+}
+
+.screen,
+.active {
   width: 100%;
   height: 100vh;
-  background-color: #110934;
+  background-color: black;
+  display: block;
 }
 
 .time-score {
@@ -32,20 +32,16 @@
   display: flex;
   color: white;
   position: absolute;
-  margin-top: 5rem;;
-  margin-left: 25rem;
+  margin-top: 5rem;
+  margin-left: 16rem;
   font-size: 25px;
 }
 
-#section1 {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-#section2 {
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -62,33 +58,11 @@
   margin-top: 22.5rem;
 }
 
-#easy-container {
-  position: relative;
-  background-color: #9EAED8;
-  width: 650px;
-  height: 650px;
-  margin: auto;
-  margin-top: 7.5rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.3rem;
-  border: solid 3px white;
-}
-
-#intermediate-container {
-  background-color: #9EAED8;
-  width: 650px;
-  height: 650px;
-  margin: auto;
-  margin-top: 7.5rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.3rem;
-  border: solid 3px white;
-}
-
+#easy-container,
+#intermediate-container,
 #hard-container {
-  background-color: #9EAED8;
+  position: relative;
+  background-color: black;
   width: 650px;
   height: 650px;
   margin: auto;
@@ -100,12 +74,13 @@
 }
 
 #target {
-  background-color: red;
   left: 20%;
   top: 20%;
   border-radius: 10rem;
   height: 50px;
-  width:50px;
+  width: 50px;
+  position: absolute;
+  background-color: white;
 }
 
 button {
@@ -114,7 +89,7 @@ button {
   border: 2px solid;
   display: flex;
   display: block;
-} 
+}
 
 #start-button {
   font-size: 20px;
@@ -123,7 +98,6 @@ button {
   background-color: transparent;
   color: white;
   cursor: pointer;
-  
 }
 
 .difficulty-buttons {
@@ -135,7 +109,8 @@ li {
   padding: 0.5rem;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.5em);
   transition-duration: 0.6s;
@@ -150,21 +125,12 @@ button:hover, button:focus {
 }
 
 .homeBtn {
-  margin: -3.2rem 0rem 0rem 106.3rem;
+  margin: 2rem 0rem 20rem 0rem;
   width: 120px;
+  font-size: 20px;
   position: absolute;
 }
 
-
-#score > * {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 0 2vh;
-  margin: 1vh 0;
-  opacity: .5;
-}
-
 .time {
-  margin-right: 1rem;;
+  margin-right: 1rem;
 }
-
