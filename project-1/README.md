@@ -1,1 +1,3 @@
-Aim trainer is a free game anyone can access to get some practice for the most popular FPS games. The game is designed to randomly pop up a target within a certain parameter on the screen the player is supposed to "shoot". 
+Aim trainer is a free game anyone can access to get some practice for the most popular FPS games. The game is designed to randomly pop up a target within a certain parameter on the screen the player is supposed to "shoot". The purpose of this game is to get better at any shooter game. 
+
+The reason I decided to build an aim trainer is because I would practice on them all the time. When I first built my own computer, it was for video games. Mouse and keyboard was obviously new to me and I thought the convenience of simply searching in the browser, "aim trainer," was amazing. There's no signing up for anything, just straight to practice. I'm also really good at apex now.
