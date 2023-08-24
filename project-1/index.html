@@ -12,64 +12,65 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+  <div id="screen">
     <title>aim trainer</title>
-  </head>
+    </head>
+      <section id="section1" class="screen active">
+        <h1 class="all-h1">aim trainer</h1>
+        <button id="start-button">START GAME</button>
+      </section>
 
-  <section id="section1" class="screen active">
-    <h1 class="all-h1">aim trainer</h1>
-    <button id="start-button">START GAME</button>
-  </section>
+      <section id="section2" class="screen active">
+        <div id="difficulty-screen">
+          <h1 class="all-h1">choose difficulty</h1>
+          <ul id="difficulty-list" class="btn-list">
+            <li>
+              <button id="easyBtn" class="difficulty-buttons">START GAME</button>
+            </li>
+            <li>
+              <button id="intermediateBtn" class="difficulty-buttons">
+                intermediate
+              </button>
+            </li>
+            <li>
+              <button id="hardBtn" class="difficulty-buttons">hard</button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- <section id="section2" class="screen active">
-    <div id="difficulty-screen">
-      <h1 class="all-h1">choose difficulty</h1>
-      <ul id="difficulty-list" class="btn-list">
-        <li>
-          <button id="easyBtn" class="difficulty-buttons">START GAME</button>
-        </li>
-        <li>
-          <button id="intermediateBtn" class="difficulty-buttons">
-            intermediate
-          </button>
-        </li>
-        <li>
-          <button id="hardBtn" class="difficulty-buttons">hard</button>
-        </li>
-      </ul>
+      <body id="body">
+        <!--easy screen-->
+        <section id="section3" class="screen hide">
+          <div class="time-score">
+            <div class="time">time: 0</div>
+            <div class="score">score:</div>
+          </div>
+          <div id="game-box" class="alert">
+            <div id="target"></div>
+          </div>
+        </section>
+
+        <!--intermediate screen-->
+        <section id="section4" class="screen active">
+          <div class="time-score">
+            <div class="time">time: 0</div>
+            <div class="score">score:</div>
+          </div>
+          <div class="game-box">
+            <div id="target2"></div>
+            <p class="alert">GAME OVER!</p>
+          </div>
+        </section> 
+
+        <!--hard screen-->
+        <section id="section5" class="screen">
+          <h1 class="difficulty-h1">hard</h1>
+          <button class="homeBtn">home</button>
+          <div id="hard-box">
+            <div id="game-1"></div>
+          </div>
+        </section> 
     </div>
-  </section> -->
-
-  <body id="body">
-    <!--easy screen-->
-    <section id="section3" class="screen hide">
-      <div class="time-score">
-        <div class="time">time: 0</div>
-        <div class="score">score:</div>
-      </div>
-      <div id="game-box" class="alert">
-        <div id="target"></div>
-      </div>
-    </section>
-
-    <!--intermediate screen-->
-    <!-- <section id="section4" class="screen active">
-      <div class="time-score">
-        <div class="time">time: 0</div>
-        <div class="score">score:</div>
-      </div>
-      <div class="game-box">
-        <div id="target2"></div>
-        <p class="alert">GAME OVER!</p>
-      </div>
-    </section> -->
-
-    <!--hard screen-->
-    <!-- <section id="section5" class="screen">
-      <h1 class="difficulty-h1">hard</h1>
-      <button class="homeBtn">home</button>
-      <div id="hard-box">
-        <div id="game-1"></div>
-      </div>
-    </section> -->
   </body>
 </html>

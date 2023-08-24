@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   // difficulty screen
   document.getElementById("easyBtn").addEventListener("click", function () {
     document.getElementById("section3").scrollIntoView({ behavior: "smooth" });
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("hardBtn").addEventListener("click", function () {
     document.getElementById("section5").scrollIntoView({ behavior: "smooth" });
   });
-}); */
+}); 
 
 let time = 60; // initial time to countdown from
 let score = 0; // score starts at 0 and goes up 1 every click
